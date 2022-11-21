@@ -24,5 +24,3 @@ def random_predict(number:int=1) -> int:
             max1 = mid1
         
     return(count)
-
-print(random_predict(53))
