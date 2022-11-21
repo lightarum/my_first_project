@@ -1,16 +1,28 @@
 import numpy as np
 
-number = np.random.randint(1, 101) # загадываем число
-count = 0
-while True:
-    count += 1
-    predict_number = int(input("Угадай число от 1 до 100:  808"))
-    if predict_number > number:
-        print("Число должно быть меньше!")
+def random_predict(number:int=1) -> int:
+    """Рандомно угадываем число
+    Args:
+        number(int, optional): Загаданное число. Defaults to 1.
+    Returns:
+        int: Число попыток
+    """
+    count = 0
+    min1 = 1
+    max1 = 101
+    number = np.random.randint(1, 101)
 
-    elif predict_number < number:
-        print("Число должно быть больше!")
+    while True:
+        count += 1
+        mid1 = int((min1+max1) / 2)
+        
+        if number == mid1:
+            break  # выход из цикла если угадали
+        elif number > mid1:
+            min1 = mid1
+        else:
+            max1 = mid1
+        
+    return(count)
 
-    else:
-        print(f"Вы угадали число! Это число = {number}, за {count} попыток")
-        break # конец игры, выход из цикла
+print(random_predict(53))
