@@ -13,7 +13,6 @@ def random_predict(number:int=1) -> int:
     count = 0
     min1 = 1
     max1 = 101
-    number = np.random.randint(1, 101)
 
     while True:
         count += 1
@@ -51,5 +50,6 @@ def score_game(random_predict) -> int:
     return(score)
 
 # RUN
+print(__name__)
 if __name__ == '__main__':
     score_game(random_predict)

@@ -24,3 +24,8 @@ def random_predict(number:int=1) -> int:
             max1 = mid1
         
     return(count)
+
+import numpy as np
+#print(arr = np.linspace(-6, 21, 60, endpoint=True))
+arr, step = np.linspace(-6, 21, 60, endpoint=False, retstep=True)
+print(step)
