@@ -6,4 +6,4 @@ From [Skill Factory Data Science cours](https://skillfactory.ru/courses/data-sci
 * [Project 1.Анализ резюме из HeadHunter](https://github.com/lightarum/my_first_project/tree/main/SkillFactory/project_1)
 * [Project 2.Анализ резюме из HeadHunter](https://github.com/lightarum/my_first_project/tree/main/SkillFactory/project_2)
 * [Project 3.Прогнозирование рейтинга отеля на Booking.com](https://github.com/lightarum/my_first_project/tree/main/SkillFactory/project_3)
-
+* [Project 4.Проект: классификация](https://github.com/lightarum/my_first_project/tree/main/SkillFactory/project_4)
